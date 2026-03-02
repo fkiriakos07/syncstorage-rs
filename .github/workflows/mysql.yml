@@ -71,6 +71,8 @@ jobs:
             "${GITHUB_REPOSITORY_NAME}" \
             "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}" \
             > version.json
+
+          cat version.json
         env:
           GITHUB_REPOSITORY_NAME: ${{ github.event.repository.name }}
 
